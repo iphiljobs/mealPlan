@@ -1,0 +1,1 @@
+window.MEAL_PLAN_DATA={"meta":{"title":"7-Day Indian Meal Plan","subtitle":"Low-effort, batch-friendly plan with full nutrition & vitamin tracking","repository":"mealPlan","updated":"October 2026","downloadFiles":{"mealPlan":"downloads/meal_plan_with_all_vitamins.xlsx","shopping":"downloads/shopping_list_all_vitamins.xlsx","pdf":"downloads/meal_plan_recipes_all_vitamins.pdf"}}};
