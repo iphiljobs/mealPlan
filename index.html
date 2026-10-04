@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Detailed 7-day Indian meal plan with recipes, nutrition, vitamins, batch prep and store shopping comparison.">
+  <meta name="theme-color" content="#163a2d">
+  <title>7-Day Indian Meal Plan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">MP</span>
+      <div><strong>MealPlan</strong><small>7-day nutrition & recipe guide</small></div>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav id="mainNav" class="nav" aria-label="Primary">
+      <a href="#overview">Overview</a>
+      <a href="#week">Week</a>
+      <a href="#nutrition">Nutrition</a>
+      <a href="#recipes">Recipes</a>
+      <a href="#shopping">Shopping</a>
+      <a href="#batch">Batch prep</a>
+      <a href="#criteria">Audit</a>
+      <a href="#sources">Sources</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="overview">
+      <div class="hero-copy">
+        <p class="eyebrow">Final verified plan</p>
+        <h1>Indian meals, exact portions, less daily cooking.</h1>
+        <p class="lead">A detailed 7-day plan built around 1,700–1,900 kcal/day, 110–130 g protein/day, high fiber, full vitamin tracking, Indian-style recipes, batch preparation, and store-specific shopping.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#week">Explore the week</a>
+          <a class="button" href="downloads/meal_plan_with_all_vitamins.xlsx">Download meal plan</a>
+          <a class="button" href="downloads/shopping_list_all_vitamins.xlsx">Download shopping list</a>
+          <a class="button" href="downloads/meal_plan_recipes_all_vitamins.pdf">Download PDF</a>
+        </div>
+        <p class="disclaimer">Nutrition values are planning estimates based on generic food-composition data. Vitamin D remains below the food-only target on most days; the plan intentionally does not increase cod liver to compensate.</p>
+      </div>
+      <aside class="hero-panel">
+        <h2>Plan at a glance</h2>
+        <div class="kpis" id="heroKpis"></div>
+        <div class="decision-list">
+          <span>Tilapia 160 g</span><span>Ocean perch 160 g</span><span>Frequent ragi</span>
+          <span>Cod liver 20 g weekly</span><span>No tofu / salmon</span><span>Fruit eaten alone</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section" id="week">
+      <div class="section-head">
+        <div><p class="eyebrow">7-day plan</p><h2>Meals by day</h2></div>
+        <p>Select a day to see exact ingredients and meal-level nutrition.</p>
+      </div>
+      <div class="day-tabs" id="dayTabs" role="tablist" aria-label="Days"></div>
+      <div id="daySummary" class="day-summary"></div>
+      <div id="mealCards" class="meal-grid"></div>
+    </section>
+
+    <section class="section alt" id="nutrition">
+      <div class="section-head">
+        <div><p class="eyebrow">Nutrition dashboard</p><h2>Daily macro, mineral & vitamin coverage</h2></div>
+        <p>Green indicates the plan meets the reference target used in the workbook; amber/red highlight areas needing attention.</p>
+      </div>
+      <div class="chart-grid">
+        <article class="panel"><h3>Calories</h3><div id="calorieChart" class="bar-chart"></div></article>
+        <article class="panel"><h3>Protein</h3><div id="proteinChart" class="bar-chart"></div></article>
+        <article class="panel"><h3>Fiber</h3><div id="fiberChart" class="bar-chart"></div></article>
+        <article class="panel"><h3>Vitamin D</h3><div id="vitDChart" class="bar-chart"></div></article>
+      </div>
+      <div class="table-toolbar">
+        <input id="nutrientSearch" type="search" placeholder="Filter nutrition columns…" aria-label="Filter nutrition columns">
+      </div>
+      <div class="table-wrap"><table id="nutritionTable"></table></div>
+      <details class="details-card">
+        <summary>Vitamin targets and interpretation</summary>
+        <div id="targetCards" class="target-grid"></div>
+      </details>
+    </section>
+
+    <section class="section" id="recipes">
+      <div class="section-head">
+        <div><p class="eyebrow">84 recipe options</p><h2>Indian-style recipe mapping</h2></div>
+        <p>Three interchangeable options are provided for each scheduled meal. Option 1 is generally the lowest-effort choice.</p>
+      </div>
+      <div class="filters">
+        <select id="recipeDay" aria-label="Recipe day filter"><option value="all">All days</option></select>
+        <select id="recipeMeal" aria-label="Recipe meal filter"><option value="all">All meals</option></select>
+        <select id="recipeBatch" aria-label="Batch friendly filter"><option value="all">Any batch status</option><option value="Yes">Batch friendly</option><option value="Partial">Partially batch friendly</option><option value="No">Fresh only</option></select>
+        <input id="recipeSearch" type="search" placeholder="Search recipes or ingredients…" aria-label="Search recipes">
+      </div>
+      <div id="recipeResults" class="recipe-list"></div>
+    </section>
+
+    <section class="section alt" id="shopping">
+      <div class="section-head">
+        <div><p class="eyebrow">Wesley Chapel / Tampa</p><h2>Interactive shopping list</h2></div>
+        <p>Compare Costco, Walmart and Lotte package guidance, then check items off. Progress is saved on this device.</p>
+      </div>
+      <div class="shopping-progress"><div><strong id="shopProgressText">0 purchased</strong><span id="shopProgressPct">0%</span></div><progress id="shopProgress" value="0" max="100"></progress></div>
+      <div class="filters">
+        <select id="shopStore" aria-label="Store filter"><option value="all">All recommended stores</option></select>
+        <select id="shopDept" aria-label="Department filter"><option value="all">All departments</option></select>
+        <input id="shopSearch" type="search" placeholder="Search shopping items…" aria-label="Search shopping items">
+        <button id="resetShopping" class="button small" type="button">Reset checks</button>
+      </div>
+      <div id="shoppingCards" class="shopping-grid"></div>
+    </section>
+
+    <section class="section" id="batch">
+      <div class="section-head">
+        <div><p class="eyebrow">Save time</p><h2>Batch-prep system</h2></div>
+        <p>Neutral bases keep the week flexible: batch rice, dals, beans and vegetables; cook fish fresh.</p>
+      </div>
+      <div id="batchGrid" class="batch-grid"></div>
+    </section>
+
+    <section class="section alt" id="criteria">
+      <div class="section-head">
+        <div><p class="eyebrow">Verification</p><h2>Criteria audit</h2></div>
+        <p>The final workbook tracks each agreed rule. Vitamin D remains the one explicit food-only gap.</p>
+      </div>
+      <div class="status-summary" id="statusSummary"></div>
+      <div id="criteriaList" class="criteria-list"></div>
+      <details class="details-card" open>
+        <summary>Viruddha-Ahara audit</summary>
+        <p class="muted">Included because it was explicitly requested. These traditional food-combination rules are presented separately from modern biomedical nutrition guidance.</p>
+        <div id="viruddhaList" class="audit-grid"></div>
+      </details>
+    </section>
+
+    <section class="section" id="sources">
+      <div class="section-head">
+        <div><p class="eyebrow">Methods & references</p><h2>Sources and limitations</h2></div>
+        <p>The site mirrors the source workbooks. Where the source files call a value an estimate, this site does too.</p>
+      </div>
+      <div id="sourceList" class="source-list"></div>
+      <div class="footer-note">
+        <strong>Important:</strong> This website is a planning/reference tool, not medical diagnosis or treatment. Generic nutrition values and estimated biotin values can differ from exact brands and laboratory measurements.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>MealPlan</strong><span>Static site prepared for GitHub Pages</span></div>
+    <a href="#overview">Back to top</a>
+  </footer>
+
+  <script src="data-init.js"></script>
+  <script src="data-meals-1.js"></script>
+  <script src="data-meals-2.js"></script>
+  <script src="data-dailyNutrition.js"></script>
+  <script src="data-batchPrep.js"></script>
+  <script src="data-criteria.js"></script>
+  <script src="data-viruddha.js"></script>
+  <script src="data-sources.js"></script>
+  <script src="data-targets.js"></script>
+  <script src="data-shoppingNotes.js"></script>
+  <script src="data-recipes-1.js"></script>
+  <script src="data-recipes-2.js"></script>
+  <script src="data-recipes-3.js"></script>
+  <script src="data-recipes-4.js"></script>
+  <script src="data-recipes-5.js"></script>
+  <script src="data-recipes-6.js"></script>
+  <script src="data-shopping-1.js"></script>
+  <script src="data-shopping-2.js"></script>
+  <script src="data-shopping-3.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
