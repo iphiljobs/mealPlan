@@ -24,6 +24,7 @@ The site is pure HTML/CSS/JavaScript and does not require a build step.
 - Criteria audit
 - Viruddha-Ahara audit
 - Source and methodology notes
+- Downloadable source XLSX and PDF files
 
 ## Data note
 
