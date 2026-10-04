@@ -1,1 +1,110 @@
-window.MEAL_PLAN_DATA.viruddha=[{"#":1,"Article rule":"Milk + fish","Status":"Avoided","How this plan handles it":"Tilapia and ocean-perch meals contain no milk/curd/yogurt."},{"#":2,"Article rule":"Milk + sour fruits; banana/mango milk combinations are specifically mentioned","Status":"Avoided","How this plan handles it":"All fruit is eaten separately, about ≥2 h from the milk-containing breakfast and main meals."},{"#":3,"Article rule":"Milk + salt","Status":"Avoided conservatively","How this plan handles it":"Milk-containing breakfasts specify no added salt."},{"#":4,"Article rule":"Milk + radish / onion / garlic","Status":"Avoided","How this plan handles it":"No onion, garlic or radish is included with milk breakfasts."},{"#":5,"Article rule":"Milk + meat or chicken","Status":"Avoided","How this plan handles it":"Chicken/goat meals contain no dairy."},{"#":6,"Article rule":"Curd at night","Status":"Avoided","How this plan handles it":"No curd/yogurt appears at dinner."},{"#":7,"Article rule":"Curd with hot food","Status":"Avoided conservatively","How this plan handles it":"Curd/yogurt is removed from cooked main meals."},{"#":8,"Article rule":"Curd + fruits","Status":"Avoided","How this plan handles it":"No curd/yogurt with fruit."},{"#":9,"Article rule":"Curd + jaggery in equal quantity","Status":"Not present","How this plan handles it":"No curd+jaggery pairing."},{"#":10,"Article rule":"Honey + ghee in equal quantity","Status":"Not present","How this plan handles it":"No honey or ghee combination."},{"#":11,"Article rule":"Heated or cooked honey","Status":"Not present","How this plan handles it":"No honey is used."},{"#":12,"Article rule":"Honey + hot water","Status":"Not present","How this plan handles it":"No honey is used."},{"#":13,"Article rule":"Honey + ghee + sesame in equal parts","Status":"Not present","How this plan handles it":"Sesame is used, but no honey/ghee are used."},{"#":14,"Article rule":"Cold water immediately after a meal","Status":"Behavioral instruction","How this plan handles it":"Avoid ice-cold water immediately after meals; normal hydration can occur between meals."},{"#":15,"Article rule":"Hot tea with biscuits and cold sweets","Status":"Not in plan","How this plan handles it":"No tea+biscuit+cold-sweet snack combination is scheduled."},{"#":16,"Article rule":"Ice cream immediately after hot curry","Status":"Not in plan","How this plan handles it":"No ice cream/dessert pairing is scheduled."},{"#":17,"Article rule":"Eating before the previous meal is digested","Status":"Behavioral instruction","How this plan handles it":"Keep the planned meal spacing; do not add extra meals/snacks if the prior meal still feels undigested."},{"#":18,"Article rule":"Eating heavy food when tired, stressed, angry or grieving","Status":"Behavioral instruction","How this plan handles it":"Ingredient list cannot guarantee emotional state; if markedly stressed/tired, avoid forcing a heavy meal."}];
+window.MEAL_PLAN_DATA["viruddha"] = [
+  {
+    "#": 1,
+    "Article rule": "Milk + fish",
+    "Status": "Avoided",
+    "How this plan handles it": "Tilapia and ocean-perch meals contain no milk/curd/yogurt."
+  },
+  {
+    "#": 2,
+    "Article rule": "Milk + sour fruits; banana/mango milk combinations are specifically mentioned",
+    "Status": "Avoided",
+    "How this plan handles it": "All fruit is eaten separately, about ≥2 h from the milk-containing breakfast and main meals."
+  },
+  {
+    "#": 3,
+    "Article rule": "Milk + salt",
+    "Status": "Avoided conservatively",
+    "How this plan handles it": "Milk-containing breakfasts specify no added salt."
+  },
+  {
+    "#": 4,
+    "Article rule": "Milk + radish / onion / garlic",
+    "Status": "Avoided",
+    "How this plan handles it": "No onion, garlic or radish is included with milk breakfasts."
+  },
+  {
+    "#": 5,
+    "Article rule": "Milk + meat or chicken",
+    "Status": "Avoided",
+    "How this plan handles it": "Chicken/goat meals contain no dairy."
+  },
+  {
+    "#": 6,
+    "Article rule": "Curd at night",
+    "Status": "Avoided",
+    "How this plan handles it": "No curd/yogurt appears at dinner."
+  },
+  {
+    "#": 7,
+    "Article rule": "Curd with hot food",
+    "Status": "Avoided conservatively",
+    "How this plan handles it": "Curd/yogurt is removed from cooked main meals."
+  },
+  {
+    "#": 8,
+    "Article rule": "Curd + fruits",
+    "Status": "Avoided",
+    "How this plan handles it": "No curd/yogurt with fruit."
+  },
+  {
+    "#": 9,
+    "Article rule": "Curd + jaggery in equal quantity",
+    "Status": "Not present",
+    "How this plan handles it": "No curd+jaggery pairing."
+  },
+  {
+    "#": 10,
+    "Article rule": "Honey + ghee in equal quantity",
+    "Status": "Not present",
+    "How this plan handles it": "No honey or ghee combination."
+  },
+  {
+    "#": 11,
+    "Article rule": "Heated or cooked honey",
+    "Status": "Not present",
+    "How this plan handles it": "No honey is used."
+  },
+  {
+    "#": 12,
+    "Article rule": "Honey + hot water",
+    "Status": "Not present",
+    "How this plan handles it": "No honey is used."
+  },
+  {
+    "#": 13,
+    "Article rule": "Honey + ghee + sesame in equal parts",
+    "Status": "Not present",
+    "How this plan handles it": "Sesame is used, but no honey/ghee are used."
+  },
+  {
+    "#": 14,
+    "Article rule": "Cold water immediately after a meal",
+    "Status": "Behavioral instruction",
+    "How this plan handles it": "Avoid ice-cold water immediately after meals; normal hydration can occur between meals."
+  },
+  {
+    "#": 15,
+    "Article rule": "Hot tea with biscuits and cold sweets",
+    "Status": "Not in plan",
+    "How this plan handles it": "No tea+biscuit+cold-sweet snack combination is scheduled."
+  },
+  {
+    "#": 16,
+    "Article rule": "Ice cream immediately after hot curry",
+    "Status": "Not in plan",
+    "How this plan handles it": "No ice cream/dessert pairing is scheduled."
+  },
+  {
+    "#": 17,
+    "Article rule": "Eating before the previous meal is digested",
+    "Status": "Behavioral instruction",
+    "How this plan handles it": "Keep the planned meal spacing; do not add extra meals/snacks if the prior meal still feels undigested."
+  },
+  {
+    "#": 18,
+    "Article rule": "Eating heavy food when tired, stressed, angry or grieving",
+    "Status": "Behavioral instruction",
+    "How this plan handles it": "Ingredient list cannot guarantee emotional state; if markedly stressed/tired, avoid forcing a heavy meal."
+  }
+];

@@ -1,0 +1,200 @@
+window.MEAL_PLAN_DATA["breakfastFlexShopping"] = [
+  {
+    "Day": "Day 1",
+    "Option": 1,
+    "Breakfast": "Warm Oats + Eggs + Separate Seed Side",
+    "Key grains / legumes": "Oats 45 g",
+    "Seed side": "Chia seeds 8 g\nGround flaxseed 7 g\nHemp hearts 5 g",
+    "Milk": "Low-fat milk 300 ml",
+    "Eggs / egg whites": "Whole eggs 1\nEgg whites 100 g",
+    "Shopping note": "Base recommended shopping plan. Main Store Comparison quantities are calculated from Option 1 across all 7 days.",
+    "Morning effort": "Cook grain/eggs"
+  },
+  {
+    "Day": "Day 1",
+    "Option": 2,
+    "Breakfast": "Unsalted Ragi-Moong Chilla + Milk + Egg",
+    "Key grains / legumes": "Ragi flour 25 g\nMoong dal (dry) 25 g",
+    "Seed side": "Chia seeds 8 g\nGround flaxseed 7 g\nHemp hearts 5 g",
+    "Milk": "Low-fat milk 275 ml",
+    "Eggs / egg whites": "Whole eggs 1\nEgg whites 50 g",
+    "Shopping note": "Optional cooked variety. Buy extra ragi/moong only on days you choose this option.",
+    "Morning effort": "6–10 min cooking"
+  },
+  {
+    "Day": "Day 1",
+    "Option": 3,
+    "Breakfast": "Unsalted Poha-Moong Egg Bowl + Milk",
+    "Key grains / legumes": "Thick poha / flattened rice (dry) 25 g\nMoong dal (dry) 20 g\nFrozen sweet peas [CF] 50 g",
+    "Seed side": "Chia seeds 8 g\nGround flaxseed 7 g\nHemp hearts 5 g",
+    "Milk": "Low-fat milk 285 ml",
+    "Eggs / egg whites": "Whole eggs 1\nEgg whites 50 g",
+    "Shopping note": "Optional poha-moong variety. Buy poha/moong/peas only on days you choose this option.",
+    "Morning effort": "6–10 min cooking"
+  },
+  {
+    "Day": "Day 1",
+    "Option": 4,
+    "Breakfast": "Overnight No-Cook Breakfast Jar + Pre-Cooked Eggs",
+    "Key grains / legumes": "Rolled oats 40 g\nReady-to-eat / steam-processed ragi flakes 10 g",
+    "Seed side": "Chia seeds 8 g\nGround flaxseed 7 g\nHemp hearts 5 g",
+    "Milk": "Low-fat milk 300 ml",
+    "Eggs / egg whites": "Whole eggs 1\nBatch-cooked egg whites 100 g",
+    "Shopping note": "Overnight no-cook morning option. Buy ready-to-eat/steam-processed ragi flakes where listed; do not substitute raw ragi flour.",
+    "Morning effort": "0 min cooking"
+  },
+  {
+    "Day": "Day 2",
+    "Option": 1,
+    "Breakfast": "Ragi Milk Porridge + Eggs + Separate Seed Side",
+    "Key grains / legumes": "Ragi flour 45 g",
+    "Seed side": "Sesame seeds 5 g\nHemp hearts 5 g\nChia seeds 5 g",
+    "Milk": "Low-fat milk 300 ml",
+    "Eggs / egg whites": "Whole eggs 1\nEgg whites 50 g",
+    "Shopping note": "Base recommended shopping plan. Main Store Comparison quantities are calculated from Option 1 across all 7 days.",
+    "Morning effort": "Cook grain/eggs"
+  },
+  {
+    "Day": "Day 2",
+    "Option": 2,
+    "Breakfast": "Unsalted Ragi-Moong Chilla + Milk + Egg",
+    "Key grains / legumes": "Ragi flour 25 g\nMoong dal (dry) 25 g",
+    "Seed side": "Sesame seeds 5 g\nHemp hearts 5 g\nChia seeds 5 g",
+    "Milk": "Low-fat milk 275 ml",
+    "Eggs / egg whites": "Whole eggs 1\nEgg whites 50 g",
+    "Shopping note": "Optional cooked variety. Buy extra ragi/moong only on days you choose this option.",
+    "Morning effort": "6–10 min cooking"
+  },
+  {
+    "Day": "Day 2",
+    "Option": 3,
+    "Breakfast": "Unsalted Poha-Moong Egg Bowl + Milk",
+    "Key grains / legumes": "Thick poha / flattened rice (dry) 25 g\nMoong dal (dry) 20 g\nFrozen sweet peas [CF] 50 g",
+    "Seed side": "Sesame seeds 5 g\nHemp hearts 5 g\nChia seeds 5 g",
+    "Milk": "Low-fat milk 275 ml",
+    "Eggs / egg whites": "Whole eggs 1\nEgg whites 50 g",
+    "Shopping note": "Optional poha-moong variety. Buy poha/moong/peas only on days you choose this option.",
+    "Morning effort": "6–10 min cooking"
+  },
+  {
+    "Day": "Day 2",
+    "Option": 4,
+    "Breakfast": "Overnight No-Cook Breakfast Jar + Pre-Cooked Eggs",
+    "Key grains / legumes": "Ready-to-eat / steam-processed ragi flakes 45 g",
+    "Seed side": "Sesame seeds 5 g\nHemp hearts 5 g\nChia seeds 5 g",
+    "Milk": "Low-fat milk 300 ml",
+    "Eggs / egg whites": "Whole eggs 1\nBatch-cooked egg whites 50 g",
+    "Shopping note": "Overnight no-cook morning option. Buy ready-to-eat/steam-processed ragi flakes where listed; do not substitute raw ragi flour.",
+    "Morning effort": "0 min cooking"
+  },
+  {
+    "Day": "Day 3",
+    "Option": 1,
+    "Breakfast": "Warm Oats + Eggs + Separate Seed Side",
+    "Key grains / legumes": "Oats 37 g",
+    "Seed side": "Chia seeds 5 g\nPumpkin seeds 5 g\nSunflower seeds 5 g",
+    "Milk": "Low-fat milk 300 ml",
+    "Eggs / egg whites": "Whole eggs 2\nEgg whites 50 g",
+    "Shopping note": "Base recommended shopping plan. Main Store Comparison quantities are calculated from Option 1 across all 7 days.",
+    "Morning effort": "Cook grain/eggs"
+  },
+  {
+    "Day": "Day 3",
+    "Option": 2,
+    "Breakfast": "Unsalted Ragi-Moong Chilla + Milk + Egg",
+    "Key grains / legumes": "Ragi flour 25 g\nMoong dal (dry) 25 g",
+    "Seed side": "Chia seeds 5 g\nPumpkin seeds 5 g\nSunflower seeds 5 g",
+    "Milk": "Low-fat milk 275 ml",
+    "Eggs / egg whites": "Whole eggs 1\nEgg whites 50 g",
+    "Shopping note": "Optional cooked variety. Buy extra ragi/moong only on days you choose this option.",
+    "Morning effort": "6–10 min cooking"
+  },
+  {
+    "Day": "Day 3",
+    "Option": 3,
+    "Breakfast": "Unsalted Poha-Moong Egg Bowl + Milk",
+    "Key grains / legumes": "Thick poha / flattened rice (dry) 25 g\nMoong dal (dry) 20 g\nFrozen sweet peas [CF] 50 g",
+    "Seed side": "Chia seeds 5 g\nPumpkin seeds 5 g\nSunflower seeds 5 g",
+    "Milk": "Low-fat milk 275 ml",
+    "Eggs / egg whites": "Whole eggs 1\nEgg whites 50 g",
+    "Shopping note": "Optional poha-moong variety. Buy poha/moong/peas only on days you choose this option.",
+    "Morning effort": "6–10 min cooking"
+  },
+  {
+    "Day": "Day 3",
+    "Option": 4,
+    "Breakfast": "Overnight No-Cook Breakfast Jar + Pre-Cooked Eggs",
+    "Key grains / legumes": "Rolled oats 35 g\nReady-to-eat / steam-processed ragi flakes 15 g",
+    "Seed side": "Chia seeds 5 g\nPumpkin seeds 5 g\nSunflower seeds 5 g",
+    "Milk": "Low-fat milk 300 ml",
+    "Eggs / egg whites": "Whole eggs 2\nBatch-cooked egg whites 50 g",
+    "Shopping note": "Overnight no-cook morning option. Buy ready-to-eat/steam-processed ragi flakes where listed; do not substitute raw ragi flour.",
+    "Morning effort": "0 min cooking"
+  },
+  {
+    "Day": "Day 4",
+    "Option": 1,
+    "Breakfast": "Warm Oats + Eggs + Separate Seed Side",
+    "Key grains / legumes": "Oats 37 g",
+    "Seed side": "Ground flaxseed 5 g\nHemp hearts 5 g\nSunflower seeds 5 g",
+    "Milk": "Low-fat milk 300 ml",
+    "Eggs / egg whites": "Whole eggs 1\nEgg whites 50 g",
+    "Shopping note": "Base recommended shopping plan. Main Store Comparison quantities are calculated from Option 1 across all 7 days.",
+    "Morning effort": "Cook grain/eggs"
+  },
+  {
+    "Day": "Day 4",
+    "Option": 2,
+    "Breakfast": "Unsalted Ragi-Moong Chilla + Milk + Egg",
+    "Key grains / legumes": "Ragi flour 25 g\nMoong dal (dry) 25 g",
+    "Seed side": "Ground flaxseed 5 g\nHemp hearts 5 g\nSunflower seeds 5 g",
+    "Milk": "Low-fat milk 275 ml",
+    "Eggs / egg whites": "Whole eggs 1\nEgg whites 35 g",
+    "Shopping note": "Optional cooked variety. Buy extra ragi/moong only on days you choose this option.",
+    "Morning effort": "6–10 min cooking"
+  },
+  {
+    "Day": "Day 4",
+    "Option": 3,
+    "Breakfast": "Unsalted Poha-Moong Egg Bowl + Milk",
+    "Key grains / legumes": "Thick poha / flattened rice (dry) 25 g\nMoong dal (dry) 20 g\nFrozen sweet peas [CF] 50 g",
+    "Seed side": "Ground flaxseed 5 g\nHemp hearts 5 g\nSunflower seeds 5 g",
+    "Milk": "Low-fat milk 300 ml",
+    "Eggs / egg whites": "Whole eggs 1\nEgg whites 15 g",
+    "Shopping note": "Optional poha-moong variety. Buy poha/moong/peas only on days you choose this option.",
+    "Morning effort": "6–10 min cooking"
+  },
+  {
+    "Day": "Day 4",
+    "Option": 4,
+    "Breakfast": "Overnight No-Cook Breakfast Jar + Pre-Cooked Eggs",
+    "Key grains / legumes": "Ready-to-eat / steam-processed ragi flakes 10 g\nThick poha / flattened rice 40 g",
+    "Seed side": "Ground flaxseed 5 g\nHemp hearts 5 g\nSunflower seeds 5 g",
+    "Milk": "Low-fat milk 300 ml",
+    "Eggs / egg whites": "Whole eggs 1\nBatch-cooked egg whites 50 g",
+    "Shopping note": "Overnight no-cook morning option. Buy ready-to-eat/steam-processed ragi flakes where listed; do not substitute raw ragi flour.",
+    "Morning effort": "0 min cooking"
+  },
+  {
+    "Day": "Day 5",
+    "Option": 1,
+    "Breakfast": "Ragi Milk Porridge + Eggs + Separate Seed Side",
+    "Key grains / legumes": "Ragi flour 45 g",
+    "Seed side": "Sesame seeds 5 g\nSunflower seeds 5 g\nChia seeds 5 g",
+    "Milk": "Low-fat milk 300 ml",
+    "Eggs / egg whites": "Whole eggs 1\nEgg whites 50 g",
+    "Shopping note": "Base recommended shopping plan. Main Store Comparison quantities are calculated from Option 1 across all 7 days.",
+    "Morning effort": "Cook grain/eggs"
+  },
+  {
+    "Day": "Day 5",
+    "Option": 2,
+    "Breakfast": "Unsalted Ragi-Moong Chilla + Milk + Egg",
+    "Key grains / legumes": "Ragi flour 25 g\nMoong dal (dry) 25 g",
+    "Seed side": "Sesame seeds 5 g\nSunflower seeds 5 g\nChia seeds 5 g",
+    "Milk": "Low-fat milk 275 ml",
+    "Eggs / egg whites": "Whole eggs 1\nEgg whites 50 g",
+    "Shopping note": "Optional cooked variety. Buy extra ragi/moong only on days you choose this option.",
+    "Morning effort": "6–10 min cooking"
+  }
+];

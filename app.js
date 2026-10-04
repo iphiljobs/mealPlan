@@ -91,13 +91,21 @@ function renderRecipes(){
     const [day,meal]=k.split("|"),base=rs[0];
     return `<article class="recipe-group">
       <div class="recipe-group-head"><div><strong>${esc(day)} · ${esc(meal)}</strong><div class="muted">${lines(base["Exact Ingredients"]).slice(0,5).map(esc).join(" · ")}${lines(base["Exact Ingredients"]).length>5?" …":""}</div></div><span>${rs.length} option${rs.length!==1?"s":""}</span></div>
-      <div class="recipe-options">${rs.sort((a,b)=>Number(a.Option)-Number(b.Option)).map(r=>`
-        <div class="recipe-option ${Number(r.Option)===1?"recommended":""}">
-          <span class="option-label">Option ${esc(r.Option)}${Number(r.Option)===1?" · Recommended":""}</span>
+      <div class="recipe-options">${rs.sort((a,b)=>Number(a.Option)-Number(b.Option)).map(r=>{
+        const bo=(D.breakfastOptions||[]).find(x=>x.Day===r.Day&&Number(x.Option)===Number(r.Option));
+        const yt=String(r["YouTube Recipe Reference"]||"");
+        const overnight=r["Meal / Timing"]==="Breakfast"&&Number(r.Option)===4;
+        const refType=String(r["Reference Type"]||"");
+        return `
+        <div class="recipe-option ${Number(r.Option)===1?"recommended":""} ${overnight?"overnight":""}">
+          <span class="option-label">${overnight?"No-cook overnight":`Option ${esc(r.Option)}${Number(r.Option)===1?" · Recommended":""}`}</span>
           <h3>${esc(r.Recipe)}</h3>
           <div class="recipe-meta">${esc(r.Style)} · ${esc(r.Equipment)} · ${esc(r["Active Prep"])} prep · ${esc(r["Cook Time"])} cook</div>
+          ${bo?`<div class="recipe-nutrition"><span>${fmt(bo["Calories"],0)} kcal</span><span>${fmt(bo["Protein g"])} g protein</span><span>${fmt(bo["Fiber g"])} g fiber</span><span>Projected day: ${fmt(bo["Projected Daily Calories"],0)} kcal</span></div>`:""}
+          <details class="ingredient-details"><summary>Exact ingredients</summary><ul class="ingredients">${lines(r["Exact Ingredients"]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></details>
           <p>${esc(r.Method)}</p>
-        </div>`).join("")}</div></article>`
+          ${yt?`<div class="recipe-actions"><a class="button small yt-link" href="${esc(yt)}" target="_blank" rel="noopener noreferrer">YouTube ${refType.includes("fallback")?"search":"reference"}</a><small>${esc(r["Reference Note"]||refType)}</small></div>`:""}
+        </div>`}).join("")}</div></article>`
   }).join("") || `<p>No recipe options match these filters.</p>`;
 }
 ["recipeDay","recipeMeal","recipeBatch","recipeSearch"].forEach(id=>$("#"+id).addEventListener("input",renderRecipes));
@@ -130,6 +138,15 @@ function renderShopping(){
 ["shopStore","shopDept","shopSearch"].forEach(id=>$("#"+id).addEventListener("input",renderShopping));
 $("#resetShopping").addEventListener("click",()=>{Object.keys(checked).forEach(k=>delete checked[k]);localStorage.removeItem("mealPlanShopping");renderShopping();updateProgress()});
 renderShopping();updateProgress();
+
+
+function renderBreakfastFlex(){
+  const rows=D.breakfastFlexShopping||[];
+  if(!rows.length||!$("#breakfastFlexTable")) return;
+  const cols=["Day","Option","Breakfast","Key grains / legumes","Seed side","Morning effort"];
+  $("#breakfastFlexTable").innerHTML=`<thead><tr>${cols.map(c=>`<th>${esc(c)}</th>`).join("")}</tr></thead><tbody>${rows.map(r=>`<tr>${cols.map(c=>`<td>${esc(r[c]).replace(/\n/g,"<br>")}</td>`).join("")}</tr>`).join("")}</tbody>`;
+}
+renderBreakfastFlex();
 
 $("#batchGrid").innerHTML=D.batchPrep.map(r=>`<article class="batch-card"><h3>${esc(r["Prep Component"])}</h3><p>${esc(r["Suggested Batch Method"])}</p><div class="meta"><b>Equipment:</b> ${esc(r.Equipment)}<br><b>Active:</b> ${esc(r["Active Time"])} · <b>Batch:</b> ${esc(r["Batch Size / Frequency"])}<br><b>Store:</b> ${esc(r["Cool & Store"])}<br><b>Finish:</b> ${esc(r["Reheat / Finish"])}</div></article>`).join("");
 

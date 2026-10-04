@@ -33,7 +33,7 @@
       <div class="hero-copy">
         <p class="eyebrow">Final verified plan</p>
         <h1>Indian meals, exact portions, less daily cooking.</h1>
-        <p class="lead">A detailed 7-day plan built around 1,700–1,900 kcal/day, 110–130 g protein/day, high fiber, full vitamin tracking, Indian-style recipes, batch preparation, and store-specific shopping.</p>
+        <p class="lead">A detailed 7-day plan built around 1,700–1,900 kcal/day, 110–130 g protein/day, high fiber, rotating seed mixes, four breakfast choices per day, seven no-cook overnight breakfasts, YouTube technique references, batch preparation, and store-specific shopping.</p>
         <div class="hero-actions">
           <a class="button primary" href="#week">Explore the week</a>
           <a class="button" href="downloads/meal_plan_with_all_vitamins.xlsx">Download meal plan</a>
@@ -46,8 +46,8 @@
         <h2>Plan at a glance</h2>
         <div class="kpis" id="heroKpis"></div>
         <div class="decision-list">
-          <span>Tilapia 160 g</span><span>Ocean perch 160 g</span><span>Frequent ragi</span>
-          <span>Cod liver 20 g weekly</span><span>No tofu / salmon</span><span>Fruit eaten alone</span>
+          <span>Tilapia 160 g</span><span>Ocean perch 160 g</span><span>4 breakfasts/day</span>
+          <span>7 no-cook overnight options</span><span>6-seed rotation</span><span>Fruit eaten alone</span>
         </div>
       </aside>
     </section>
@@ -85,8 +85,8 @@
 
     <section class="section" id="recipes">
       <div class="section-head">
-        <div><p class="eyebrow">84 recipe options</p><h2>Indian-style recipe mapping</h2></div>
-        <p>Three interchangeable options are provided for each scheduled meal. Option 1 is generally the lowest-effort choice.</p>
+        <div><p class="eyebrow">91 recipe options</p><h2>Indian-style recipe mapping</h2></div>
+        <p>Breakfast has four choices per day, including a no-cook overnight option. Other meals retain three choices. YouTube links are technique references; workbook quantities and restrictions override external recipes.</p>
       </div>
       <div class="filters">
         <select id="recipeDay" aria-label="Recipe day filter"><option value="all">All days</option></select>
@@ -110,6 +110,11 @@
         <button id="resetShopping" class="button small" type="button">Reset checks</button>
       </div>
       <div id="shoppingCards" class="shopping-grid"></div>
+      <details class="details-card">
+        <summary>Breakfast option shopping guide</summary>
+        <p class="muted">The main shopping checklist is based on recommended Breakfast Option 1. Use this guide only for the alternative breakfast(s) you actually choose.</p>
+        <div class="table-wrap"><table id="breakfastFlexTable"></table></div>
+      </details>
     </section>
 
     <section class="section" id="batch">
@@ -155,21 +160,25 @@
   <script src="data-meals-1.js"></script>
   <script src="data-meals-2.js"></script>
   <script src="data-dailyNutrition.js"></script>
-  <script src="data-batchPrep.js"></script>
-  <script src="data-criteria.js"></script>
-  <script src="data-viruddha.js"></script>
-  <script src="data-sources.js"></script>
-  <script src="data-targets.js"></script>
-  <script src="data-shoppingNotes.js"></script>
   <script src="data-recipes-1.js"></script>
   <script src="data-recipes-2.js"></script>
   <script src="data-recipes-3.js"></script>
   <script src="data-recipes-4.js"></script>
   <script src="data-recipes-5.js"></script>
   <script src="data-recipes-6.js"></script>
+  <script src="data-breakfastOptions-1.js"></script>
+  <script src="data-breakfastOptions-2.js"></script>
+  <script src="data-batchPrep.js"></script>
+  <script src="data-criteria.js"></script>
+  <script src="data-viruddha.js"></script>
+  <script src="data-sources.js"></script>
+  <script src="data-targets.js"></script>
   <script src="data-shopping-1.js"></script>
   <script src="data-shopping-2.js"></script>
   <script src="data-shopping-3.js"></script>
+  <script src="data-breakfastFlex-1.js"></script>
+  <script src="data-breakfastFlex-2.js"></script>
+  <script src="data-shoppingNotes.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

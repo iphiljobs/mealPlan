@@ -1,198 +1,81 @@
 # mealPlan
 
-A responsive GitHub Pages website for the **final verified 7-day Indian meal plan**, including exact portions, nutrition tracking, recipe alternatives, batch-prep guidance, and store-specific shopping support.
+Responsive GitHub Pages website for the final verified **7-day Indian meal plan**.
 
 ## Live Website
 
 **https://iphiljobs.github.io/mealPlan/**
 
-The site is deployed automatically from the `main` branch using **GitHub Actions + GitHub Pages**.
+## Current Revision
 
-## What the Website Includes
+- **4 breakfast options per day** / 28 breakfast choices
+- **7 true no-cook-morning overnight breakfast options**
+- Breakfast seed rotation: **chia, ground flax, hemp hearts, pumpkin seeds, sunflower seeds, sesame**
+- Seeds are kept **separate from the milk/grain bowl**
+- More breakfast variety using oats, cooked ragi, ragi-moong chilla, poha-moong bowls, and overnight oat/ragi-flake/poha combinations
+- **91 total recipe options**
+- YouTube technique references or clearly labeled search fallbacks
+- Revised nutrition, vitamin totals, shopping quantities, batch prep, criteria and sources
+- Flexible shopping guide for Breakfast Options 2–4
 
-- **7-day exact meal plan**
-  - Breakfast, mid-morning fruit, lunch, and dinner
-  - Exact ingredient quantities
-  - Meal-level calories, protein, fiber, minerals, and selected vitamin values
-  - Viruddha-Ahara safeguards shown alongside each meal
+## Core Planning Targets
 
-- **Daily nutrition dashboard**
-  - Calories
-  - Protein, carbohydrates, fiber, and fat
-  - Calcium, iron, magnesium, and potassium
-  - Omega-3
-  - Saturated fat
-  - Vitamin A total
-  - Preformed vitamin A
-  - Vitamins C, D, E, and K
-  - Vitamins B1, B2, B3, B5, B6, B7/biotin, B9/folate, and B12
+- **1,700–1,900 kcal/day**
+- **110–130 g protein/day**
+- **≥38 g fiber/day**
+- Calcium **≥1,000 mg/day**
+- Vitamin B12 **≥2.4 µg/day**
+- Omega-3 planning value **≥1.6 g/day**
 
-- **84 Indian-style recipe options**
-  - 3 interchangeable recipe options for each scheduled meal
-  - Recommended low-effort option highlighted
-  - Equipment, prep time, cook time, batch-friendliness, and cooking method
-  - Instant Pot, stovetop, air-fryer, microwave, and simple batch-cooking options
+All 28 breakfast choices were screened against the core daily targets when substituted into their assigned day.
 
-- **Batch-prep system**
-  - Rice
-  - Dals
-  - Rajma and chickpeas
-  - Chicken
-  - Goat/mutton
-  - Vegetables
-  - Eggs and egg whites
-  - Breakfast dry packs
-  - Seeds
-  - Fresh-cook guidance for fish
+Vitamin D remains a food-only gap on most days. Vitamin E improves with sunflower seeds but remains below 15 mg/day in the conservative generic-food model because unspecified cooking-oil vitamin E is excluded.
 
-- **Interactive shopping planner**
-  - Costco Wesley Chapel
-  - Walmart Wesley Chapel
-  - Lotte Plaza Market Tampa
-  - Weekly quantity requirements
-  - Package-size guidance
-  - Recommended store by item
-  - Search and store/category filters
-  - Browser-saved shopping checklist
+## Overnight Breakfast
 
-- **Criteria audit**
-  - Calories: **1,700–1,900 kcal/day**
-  - Protein: **110–130 g/day**
-  - Fiber: **≥38 g/day**
-  - Saturated fat: **<10% of calories**
-  - Calcium, iron, magnesium, potassium, B12, folate, and omega-3 targets
-  - Fish, ragi, cod-liver, produce, and ingredient-selection rules
-  - Explicit tracking of remaining gaps
+Option 4 is assembled the night before and requires **0 minutes of morning cooking**.
 
-- **Viruddha-Ahara audit**
-  - 18 requested traditional food-combination rules
-  - Fruit eaten separately
-  - Milk breakfasts kept away from added salt, onion, and garlic
-  - Meat/fish meals kept dairy-free
-  - Behavioral rules clearly separated from ingredient rules
+Use only rolled oats, thick poha, or label-confirmed **ready-to-eat / steam-processed ragi flakes**. Do not use raw ragi flour as a no-cook overnight ingredient. Eggs and egg-white portions are batch-cooked ahead of time. Seed packs remain separate.
 
-- **Sources and methodology**
-  - USDA FoodData Central
-  - NIH dietary reference resources
-  - FDA/EPA fish guidance
-  - 2026 EWG Dirty Dozen / Clean Fifteen references
-  - User-provided ICAN cod-liver label information
-  - Ayurvedic rule-set source used for the requested Viruddha-Ahara framework
+## YouTube References
 
-## Key Final Plan Decisions
+Direct YouTube references are used when a reasonably close recipe video was verified. Otherwise the site/workbook clearly labels a YouTube search fallback.
 
-- Tilapia: **160 g raw**, once weekly
-- Ocean perch: **160 g raw**, once weekly
-- ICAN cod liver: **20 g once weekly**
-- Frequent ragi retained
-- No tofu
-- No salmon
-- No croaker
-- No red snapper
-- No farm rock fish
-- Fruit is eaten literally by itself
-- No yogurt/curd in the final plan
-- Approved seasonings are kept explicit
-- Day 2 includes an additional **5 g chia**
-- Day 5 includes an additional **5 g ground flaxseed**
+External videos are **technique references only**. Meal-plan quantities, oil limits, milk-breakfast safeguards, fruit separation, dairy restrictions and other plan rules override the video.
 
-## Important Nutrition Note
+## Recommended Base Shopping - Revised Seeds
 
-The plan meets the requested calorie, protein, fiber, and most micronutrient targets in the planning model.
+- Chia: **33 g/week**
+- Ground flax: **17 g/week**
+- Hemp hearts: **20 g/week**
+- Pumpkin seeds: **10 g/week**
+- Sunflower seeds: **20 g/week**
+- Sesame: **164 g/week total**
 
-**Vitamin D remains below the 15 µg/day food target on most days.** The plan intentionally does **not** increase cod liver simply to correct vitamin D because cod liver is also highly concentrated in preformed vitamin A.
-
-Nutrition values are planning estimates based on generic food-composition data and may differ from exact brands, preparation methods, or laboratory analysis. Vitamin B7/biotin values are especially approximate because generic food datasets often have incomplete biotin data.
-
-The traditional Viruddha-Ahara rules are included because they were specifically requested and are presented separately from modern biomedical nutrition guidance.
+The main shopping list is based on Breakfast Option 1. Use the Breakfast Flex Shopping guide for optional substitutions.
 
 ## Downloads
-
-The website provides direct downloads for the synchronized source artifacts:
 
 - `downloads/meal_plan_with_all_vitamins.xlsx`
 - `downloads/shopping_list_all_vitamins.xlsx`
 - `downloads/meal_plan_recipes_all_vitamins.pdf`
 
-## Repository Structure
+## Features
 
-```text
-mealPlan/
-├── index.html
-├── styles.css
-├── app.js
-├── data-init.js
-├── data-meals-1.js
-├── data-meals-2.js
-├── data-dailyNutrition.js
-├── data-recipes-1.js ... data-recipes-6.js
-├── data-shopping-1.js ... data-shopping-3.js
-├── data-batchPrep.js
-├── data-criteria.js
-├── data-viruddha.js
-├── data-targets.js
-├── data-sources.js
-├── data-shoppingNotes.js
-├── downloads/
-│   ├── meal_plan_with_all_vitamins.xlsx
-│   ├── shopping_list_all_vitamins.xlsx
-│   └── meal_plan_recipes_all_vitamins.pdf
-├── .github/
-│   └── workflows/
-│       └── pages.yml
-├── .nojekyll
-└── README.md
-```
+- exact 7-day meal plan
+- complete macro/mineral/vitamin dashboard
+- 91 recipe options
+- YouTube references
+- batch-prep guide
+- interactive Costco/Walmart/Lotte shopping checklist
+- browser-saved shopping progress
+- breakfast alternative shopping guide
+- criteria and Viruddha-Ahara audits
+- source/methodology notes
 
-## Technology
+## Deployment
 
-The website is intentionally lightweight:
+Every push to `main` deploys through `.github/workflows/pages.yml`.
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- Browser `localStorage` for shopping-checklist persistence
-- No framework
-- No database
-- No build step
-- No server-side runtime
-
-## GitHub Pages Deployment
-
-Deployment is handled by:
-
-```text
-.github/workflows/pages.yml
-```
-
-Every push to `main` triggers the GitHub Pages workflow.
-
-The current production URL is:
-
-**https://iphiljobs.github.io/mealPlan/**
-
-## Local Preview
-
-Clone the repository and serve it with any static web server.
-
-For example:
-
-```bash
-git clone https://github.com/iphiljobs/mealPlan.git
-cd mealPlan
-python -m http.server 8000
-```
-
-Then open:
-
-```text
-http://localhost:8000
-```
-
-## Status
-
-**Published and live on GitHub Pages.**
-
+Website: **https://iphiljobs.github.io/mealPlan/**  
 Repository: **https://github.com/iphiljobs/mealPlan**
-
-Website: **https://iphiljobs.github.io/mealPlan/**
